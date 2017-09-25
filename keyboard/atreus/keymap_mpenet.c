@@ -1,10 +1,11 @@
 #include "keymap_common.h"
 
-/* This is based on the "classic" layer , the first layer has
-   backspace on bottom left (I use C-h instead) and puts <tab> - <super> -
-   <shift> closer to the left thumb */
+// This is based on the "querty_classic" layer with some adjustements
+// to make it comfy if you use C-i (tab) C-h (del) C-m (ret). Goal is
+// to have really minimal hand movement and 1 mod access to the
+// various parens, numbers & glyphs.
 
-// reset is fn-del-b
+// See KEYMAP for layer1
 
 //    !     @     {     }     |       ||     pgup    7     8     9    *
 //    #     $     (     )     `       ||     pgdn    4     5     6    +
