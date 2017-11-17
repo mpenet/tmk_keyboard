@@ -55,7 +55,7 @@ SRC =	keymap_common.c \
 	matrix.c \
 	led.c
 
-KEYMAP ?= qwerty
+KEYMAP ?= mpenet
 SRC := keymap_$(KEYMAP).c $(SRC)
 
 CONFIG_H = config.h
@@ -150,4 +150,3 @@ include $(TOP_DIR)/rules.mk
 
 udev:
 	cp a-star.rules /etc/udev/rules.d/
-
