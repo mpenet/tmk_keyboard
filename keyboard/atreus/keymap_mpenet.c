@@ -1,19 +1,32 @@
 #include "keymap_common.h"
 
-// This is based on the "querty_classic" layer with some adjustements
-// to make it comfy if you use C-i (tab) C-h (del) C-m (ret). Goal is
-// to have really minimal hand movement and 1 mod access to the
-// various parens, numbers & glyphs.
+/* This is based on the "querty_classic" layer with some adjustements
+   to make it comfy if you use C-i (tab) C-h (del) C-m (ret).
 
-// See KEYMAP for layer1
+   This is a layout optimized for emacs users, and currently paired
+   with i3 with movements keys and general ergonomics following the
+   same approach
 
+   The goal is to have really minimal hand movement and 1 mod access to the
+   various parens, numbers & glyphs. bksp and enter are still on L1
+   but never used, same goes for esc and tab.
+
+   Arrows and F keys are never used but present on L3
+*/
+
+// L1
+ /*   q     w     e     r     t       ||       y     u     i     o    p   */
+ /*   a     s     d     f     g       ||       h     j     k     l    ;   */
+ /*   z     x     c     v     b       ||       n     m     ,     .    /   */
+ /*  bksp  esc  tab  super shift ctrl || alt space  fn     -     '  enter */
+
+// L2
 //    !     @     {     }     |       ||     pgup    7     8     9    *
 //    #     $     (     )     `       ||     pgdn    4     5     6    +
 //    %     ^     [     ]     ~       ||       &     1     2     3    \
 //   L2  insert super shift bksp ctrl || alt space   fn    .     0    =
 
-// L2 has the arrows:
-
+// L3 has the arrows (I *never* use that layer)
 //  insert home    ↑    end  pgup     ||       ↑     F7    F8    F9   F10
 //    del   ←      ↓     →   pgdn     ||       ↓     F4    F5    F6   F11
 //                                    ||             F1    F2    F3   F12
